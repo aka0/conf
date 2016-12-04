@@ -115,9 +115,11 @@ if has("gui_running")
     set guioptions-=e
     set t_Co=256
     set guitablabel=%M\ %t
-    set guifont=Terminus\ (TTF):h14:cANSI
+    set guifont=Terminus\ (TTF):h16
+    set noantialias
 endif
 
+" FONT Setup
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
 
