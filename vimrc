@@ -1,12 +1,17 @@
 " vimrc
-" Last Modified: 2017-03-22
 
+set guifont=Terminus\ (TTF):h16
+set noantialias
+set nocompatible
 set history=500
 syntax on
 set background=dark
+let g:airline_theme='deus'
 colo grb256
 
 set autoread
+set pastetoggle=<F5>
+set showmode
 
 " My Keymapping
 let mapleader = ","
@@ -14,8 +19,6 @@ let g:mapleader = ","
 nmap <leader>w :w!<cr>
 nmap <leader>l :set nu<cr>
 nmap <leader>ll :set nonumber<cr>
-nmap <leader>p :set paste<cr>
-nmap <leader>pp :set nopaste<cr>
 
 set ruler
 set number
@@ -50,7 +53,7 @@ set wrap "Wrap lines
 
 " Always show statusline
 set laststatus=2
-set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
+"set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
 
 " Use 256 colours (Use this setting only if your terminal supports 256 colours)
 set t_Co=256
